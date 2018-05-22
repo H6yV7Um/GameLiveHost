@@ -1,0 +1,83 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_publish_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+   <RelativeLayout
+       android:id="@+id/rl_all_view"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:id="@+id/ll_user_list"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/dp10"
+           android:gravity="center_vertical"
+           android:orientation="horizontal"
+           android:visibility="gone">
+
+           <android.support.v7.widget.RecyclerView
+               android:id="@+id/room_recycler_audience"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dp30"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="@dimen/dp20"/>
+
+       </LinearLayout>
+
+       <com.facebook.drawee.view.SimpleDraweeView
+           android:id="@+id/img_user_avatar"
+           android:layout_width="@dimen/dp60"
+           android:layout_height="@dimen/dp60"
+           android:scaleType="fitCenter"
+           fresco:actualImageScaleType="centerCrop"
+           fresco:backgroundImage="@color/rgb_eaeaea"
+           fresco:placeholderImage="@drawable/ic_launcher_author"
+           fresco:roundAsCircle="true"
+           fresco:roundingBorderColor="@color/colorPrimary"
+           fresco:roundingBorderWidth="@dimen/common_line"
+           android:layout_marginTop="@dimen/dp20"
+           android:layout_marginLeft="@dimen/dp15"/>
+
+       <TextView
+           android:id="@+id/online_audience"
+           android:layout_below="@+id/img_user_avatar"
+           android:text="@string/on_line_audience"
+           android:layout_marginLeft="@dimen/dp15"
+           android:layout_marginTop="@dimen/dp10"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+       <ImageView
+           android:id="@id/live_back_img"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:background="@drawable/selector_close"
+           android:layout_alignParentRight="true"
+           android:layout_below="@id/ll_user_list"
+           android:layout_margin="15dp"/>
+
+
+
+       <!-- 公聊记录 -->
+       <include layout="@layout/room_live_public_chat_list" />
+
+       <include layout="@layout/room_live_heart_view"/>
+
+       <include layout="@layout/room_operation"/>
+
+       <include layout="@layout/room_live_local_gift_list"/>
+
+       <!-- 公共聊天栏 -->
+       <include layout="@layout/room_live_chat_input" />
+
+   </RelativeLayout>
+
+</FrameLayout>

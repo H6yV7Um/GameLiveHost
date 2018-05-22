@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_live_start_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/big_bg_color_blue">
+
+    <include layout="@layout/title_view"/>
+
+    <FrameLayout
+        android:id="@+id/up_image_live"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp300">
+
+        <TextView
+            android:id="@+id/tv_live_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp250"
+            android:text="点击上传直播封面图片"
+            android:visibility="gone"
+            android:textSize="25sp"/>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/live_bg_sdv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp300"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:placeholderImageScaleType="focusCrop"
+            fresco:placeholderImage="@drawable/start_live_bg"
+            fresco:fadeDuration="300"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:orientation="horizontal"
+            android:background="@color/black_trans_40"
+            android:layout_marginBottom="@dimen/dp20"
+            android:layout_gravity="bottom">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp17"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text="开播："
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/et_live_title_by_sign"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical"
+                android:hint="@string/Please_enter_the_live_theme"
+                android:maxLength="10"
+                android:textSize="@dimen/sp14"
+                android:layout_marginLeft="@dimen/dp20"
+                android:background="@null"
+                android:layout_marginRight="@dimen/dp10"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"/>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/bt_start_live_by_sign"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_live_by_sign"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp20"
+        android:background="@drawable/shape_commit_radius_by_red"/>
+</LinearLayout>

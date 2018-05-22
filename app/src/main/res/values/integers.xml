@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="fragment_transition_time">@android:integer/config_shortAnimTime</integer>
+    <integer name="continue_gift_show_duration">600</integer>
+    <integer name="continue_gift_combo_duration">150</integer>
+    <integer name="gift_full_heart_anim_frame">50</integer>
+
+    <integer name="nickname_length_limit">15</integer>
+    <integer name="professional_length_limit">12</integer>
+    <integer name="introduction_length_limit">32</integer>
+    <integer name="strong_length_limit">50</integer>
+</resources>

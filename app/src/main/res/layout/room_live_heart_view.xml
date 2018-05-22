@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_above="@id/room_ll_operation_bar"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_gravity="bottom"
+    android:layout_width="@dimen/dp80"
+    android:layout_height="@dimen/dp250" >
+    <com.wushuangtech.gamelive.widget.heart.HeartAnim
+        android:id="@id/room_heart_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </RelativeLayout>

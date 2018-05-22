@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_pull_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_all_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@id/live_back_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"
+            android:background="@drawable/selector_close" />
+
+        <ImageView
+            android:id="@+id/iv_change_m_small"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/live_back_img"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/m_suoxiao_dianji" />
+
+        <!-- 公聊记录 -->
+        <include layout="@layout/room_live_public_chat_list" />
+
+        <include layout="@layout/room_live_heart_view" />
+
+        <include layout="@layout/room_operation" />
+
+        <!-- 公共聊天栏 -->
+        <include layout="@layout/room_live_chat_input" />
+
+        <include layout="@layout/room_layout_gift" />
+
+        <include layout="@layout/room_live_local_gift_list"/>
+
+
+    </RelativeLayout>
+</FrameLayout>
+

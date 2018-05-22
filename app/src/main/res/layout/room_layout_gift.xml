@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/layout_gift"
+                android:clickable="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/black"
+                android:alpha="0.5"
+                android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_gift_btn_charge"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical">
+        
+        <ImageView
+            android:id="@+id/iv_yuanbao"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/yuanbao"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/layout_gift_charge_tv"
+            style="@style/room_gift_account_balance_text"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/iv_yuanbao"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:textSize="@dimen/sp12"
+            tools:text="1000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送礼物"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/iv_gift_back"
+            style="@style/room_gift_account_balance_right_img"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <View
+        android:layout_height="@dimen/common_line"
+        android:layout_width="match_parent"
+        android:background="@color/white_trans_40"/>
+
+
+    <com.wushuangtech.gamelive.giftView.GiftLayoutView
+        android:id="@+id/gift"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <View
+        android:layout_height="@dimen/common_line"
+        android:layout_width="match_parent"
+        android:background="@color/white_trans_40"
+        android:layout_marginBottom="@dimen/dp5"/>
+
+    <LinearLayout
+        android:id="@+id/layout_gift_btnlay"
+        style="@style/room_gift_oper_container"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_number_bg"
+            android:layout_marginRight="@dimen/dp20"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_gift_jian"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/jian"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_gift_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/tv_gift_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"/>
+                <ImageView
+                    android:id="@+id/iv_gift_more_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/xia"
+                   android:layout_toRightOf="@id/tv_gift_num"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_gift_jia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jia"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/layout_gift_btn_continue"
+            style="@style/room_gift_btn_continuesend"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"/>
+
+        <Button
+            android:id="@+id/layout_gift_btn_send"
+            style="@style/room_gift_btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/dp20"/>
+    </LinearLayout>
+
+
+</LinearLayout>

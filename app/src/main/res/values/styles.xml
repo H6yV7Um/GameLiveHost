@@ -1,0 +1,128 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:listDivider">@color/colorPrimaryDark</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="BaseAppTheme" parent="AppTheme"></style>
+
+
+    <!-- 送礼条上的显示文字 -->
+    <style name="continue_gift_info_txt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <style name="room_gift_btn_continuesend">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/sel_gift_continue_send</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">80dip</item>
+        <item name="android:layout_height">80dip</item>
+        <item name="android:layout_marginRight">20.0dip</item>
+        <item name="android:layout_marginBottom">35.0dip</item>
+        <item name="android:text">@string/layout_gift_continue_send_default</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="room_gift_oper_container">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40.0dip</item>
+    </style>
+
+    <style name="room_gift_btn_charge">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="room_gift_chargeinfor_balance">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/yunkacolor</item>
+    </style>
+
+    <style name="room_gift_account_balance_text">
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="room_gift_account_balance_right_img" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginRight">18dp</item>
+        <item name="android:src">@drawable/ic_me_next</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="room_gift_btn_send">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+        <item name="android:background">@drawable/shape_send_bg</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:text">@string/room_send</item>
+    </style>
+
+    <style name="anim_view">
+        <item name="@android:windowEnterAnimation">@anim/top_in</item>
+        <item name="@android:windowExitAnimation">@anim/top_out</item>
+    </style>
+
+    <!--  dialog -->
+    <style name="DialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+
+    </style>
+
+    <style name="popwin_anim_style_authen">
+        <item name="android:windowEnterAnimation">@anim/them_pop_authen_show</item>
+        <item name="android:windowExitAnimation">@anim/them_pop_authen_hiden</item>
+    </style>
+
+
+    <style name="UserAvatarRiv">
+        <item name="android:id">@id/img_user_avatar</item>
+        <item name="android:layout_width">@dimen/avatar_size_default</item>
+        <item name="android:layout_height">@dimen/avatar_size_default</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="UserStarTypeImg">
+        <item name="android:id">@id/img_user_star_type</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignRight">@id/img_user_avatar</item>
+        <item name="android:layout_alignBottom">@id/img_user_avatar</item>
+    </style>
+
+
+
+
+</resources>

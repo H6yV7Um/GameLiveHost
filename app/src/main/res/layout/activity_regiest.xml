@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/big_bg_color_blue"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/title_view"/>-->
+
+    <ImageView
+        android:id="@+id/iv_regiest_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp15"
+        android:src="@drawable/fanhui"
+        android:tint="@color/black"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp40"
+        android:gravity="center_horizontal"
+        android:text="账号注册"
+        android:textColor="#999999"
+        android:textSize="@dimen/sp42" />
+
+    <RelativeLayout
+        android:id="@+id/rl_phone_status"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp48"
+        android:background="@drawable/selector_edit_bg">
+
+        <ImageView
+            android:id="@+id/login_iv_phone_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:src="@mipmap/login_phone_ic" />
+
+        <EditText
+            android:id="@+id/et_regiest_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@id/login_iv_phone_ic"
+            android:background="#0000"
+            android:duplicateParentState="true"
+            android:hint="@string/login_input_phone_hint"
+            android:inputType="number"
+            android:textSize="@dimen/sp17" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_password_status"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp15"
+        android:background="@drawable/selector_edit_bg">
+
+        <ImageView
+            android:id="@+id/login_iv_password_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:src="@mipmap/login_password_ic" />
+
+        <EditText
+            android:id="@+id/et_regiest_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@id/login_iv_password_ic"
+            android:background="#0000"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:textSize="@dimen/sp17" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_password_confirm_status"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp15"
+        android:background="@drawable/selector_edit_bg">
+
+        <ImageView
+            android:id="@+id/regiest_iv_password_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:src="@mipmap/login_password_ic" />
+
+        <EditText
+            android:id="@+id/et_regiest_password_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@id/regiest_iv_password_ic"
+            android:background="#0000"
+            android:hint="确认密码"
+            android:inputType="textPassword"
+            android:textSize="@dimen/sp17" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp15">
+
+
+        <TextView
+            android:id="@+id/tv_get_check_code"
+            android:layout_width="120dp"
+            android:layout_height="@dimen/dp48"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:text="发送验证码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14"
+            android:background="@drawable/shape_height40_2_grey"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"/>
+
+        <EditText
+            android:id="@+id/et_regiest_check_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_get_check_code"
+            android:layout_marginRight="@dimen/dp20"
+            android:paddingLeft="@dimen/dp10"
+            android:background="@drawable/selector_edit_bg"
+            android:hint="@string/forget_get_check_code"
+            android:inputType="number"
+            android:textSize="@dimen/sp17" />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/bt_next_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp30"
+        android:background="@drawable/shape_commit_radius_by_blue"
+        android:text="@string/regiest_next_step"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp20" />
+
+</LinearLayout>

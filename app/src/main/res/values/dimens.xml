@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dp135">135dp</dimen>
+    <dimen name="dp98">98dp</dimen>
+    <dimen name="dp40">40dp</dimen>
+
+
+    <dimen name="heart_rate">0.75dp</dimen>
+    <dimen name="dp200">200dp</dimen>
+    <dimen name="dp250">250dp</dimen>
+    <dimen name="dp125">125dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+
+    <dimen name="room_continue_gift_margin_top">20.0dip</dimen>
+    <dimen name="room_continue_gift_icon_show_distance">220.0dip</dimen>
+    <dimen name="room_continue_gift_corner_height">160.0dip</dimen>
+    <dimen name="dp20">20dp</dimen>
+
+
+    <dimen name="user_level_width">30dp</dimen>
+    <dimen name="user_level_height">15dp</dimen>
+    <dimen name="room_heart_fixed_size">18dp</dimen>
+    <dimen name="text_size_md_body">15sp</dimen>
+    <dimen name="dp5">5dp</dimen>
+    <dimen name="dp100">100dp</dimen>
+    <dimen name="dp80">80dp</dimen>
+    <dimen name="dp245">245dp</dimen>
+    <dimen name="dp322">322dp</dimen>
+    <dimen name="dp380">380dp</dimen>
+    <dimen name="dp60">60dp</dimen>
+    <dimen name="dp58">58dp</dimen>
+    <dimen name="dp0.5">0.5dp</dimen>
+    <dimen name="dp36">36dp</dimen>
+    <dimen name="dp30">30dp</dimen>
+    <dimen name="dp49">49dp</dimen>
+    <dimen name="dp122">122dp</dimen>
+    <dimen name="dp161">161dp</dimen>
+    <dimen name="dp190">190dp</dimen>
+    <dimen name="dp25">25dp</dimen>
+
+
+    <!-- gift item -->
+    <dimen name="item_gift_icon_size">48dp</dimen>
+    <dimen name="item_hongbao_icon_size">88dp</dimen>
+    <dimen name="item_gift_tv_margin">2dp</dimen>
+    <dimen name="dialog_btn_shape_radio">20dp</dimen>
+    <dimen name="dialog_btn_height">40dp</dimen>
+    <dimen name="dialog_content_margin">25dp</dimen>
+    <dimen name="room_finish_title_size">30sp</dimen>
+    <dimen name="create_room_startlive_height">45.0dip</dimen>
+    <dimen name="edit_padding">5dp</dimen>
+    <dimen name="margin_middle">8dp</dimen>
+    <dimen name="margin_group">32dp</dimen>
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_micro">5dp</dimen>
+    <dimen name="text_size_md_smallest">12sp</dimen>
+
+    <dimen name="common_line">0.5dp</dimen>
+    <dimen name="dp15">15dp</dimen>
+    <dimen name="sp20">20sp</dimen>
+    <dimen name="sp17">17sp</dimen>
+    <dimen name="sp12">12sp</dimen>
+    <dimen name="sp16">16sp</dimen>
+    <dimen name="sp13">13sp</dimen>
+    <dimen name="dp300">300dp</dimen>
+    <dimen name="room_chat_height">40dp</dimen>
+    <dimen name="dp280">280dp</dimen>
+    <dimen name="dp140">140dp</dimen>
+    <dimen name="dp50">50dp</dimen>
+    <dimen name="dp45">45dp</dimen>
+    <dimen name="sp14">14sp</dimen>
+    <dimen name="dp48">48dp</dimen>
+    <dimen name="sp21">21sp</dimen>
+    <dimen name="sp42">42sp</dimen>
+    <dimen name="dp1">1dp</dimen>
+    <dimen name="dp2">2dp</dimen>
+
+    <dimen name="avatar_size_default">30dp</dimen>
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--直播中的控件id-->
+    <item name="live_back_img" type="id" />
+    <item name="live_gift_img" type="id" />
+    <item name="live_heart_img" type="id" />
+    <item name="live_edt_chat" type="id" />
+    <item name="live_publish_talk" type="id" />
+    <item name="live_change_big" type="id" />
+    <item name="live_change_small" type="id" />
+
+    <item name="room_ll_chat_bar" type="id" />
+    <item name="room_btn_send" type="id" />
+    <item name="room_ll_operation_bar" type="id" />
+    <item name="room_heart_view" type="id" />
+    <item name="room_edt_chat" type="id" />
+
+    <item name="img_user_star_type" type="id"/>
+
+</resources>
